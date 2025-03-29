@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+header{
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+
+}
+header span{
+    color: rgb(240, 111, 13);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.search{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+   border-radius: 7px;
+   border: 2px solid;
+    
+    border: 1px solid lightgray;
+}
+.ri-search-line{
+    cursor: pointer;
+    border: none;
+}
+.ri-layout-grid-line{
+    cursor: pointer;
+}
+#bookinput{
+    border: none;
+}
+
+
+
+/* the card section  measns the books */
+.card{
+  
+  width: 150px;
+  /* border: 2px solid lightgray; */
+  border-radius: 7px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card img{
+  width: 100%;
+  height: 100px;
+  object-fit: fill;
+}
+.card .description{
+  text-align: center;
+}
+.description .title{
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+.description p{
+  font-size: 10px;
+}
+
+
+.bookresults {
+    padding: 20px;
+  }
+  
+.cardcontainer {
+  display: grid;
+  gap: 10px;
+  column-gap: 20px;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.linktag{
+  text-decoration: none;
+}
+  
+  /* Optional: Make it responsive for smaller screens */
+  @media (max-width: 900px) {
+    .cardcontainer.grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .cardcontainer.grid {
+      grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+  }
+
+
+
+  
